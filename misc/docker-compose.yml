@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  syscode-profile-service:
+    image: syscode-profile-service:latest
+    volumes:
+      - ./application-profile.properties:/app/resources/application.properties
+    ports:
+      - "8443:8080"
+    networks:
+      - bifrost
+
+  syscode-address-service:
+    image: syscode-address-service:latest
+    volumes:
+      - ./application-address.properties:/app/resources/application.properties
+    ports:
+      - "8444:8080"
+    networks:
+      - bifrost
+
+
+networks:
+  bifrost:
+    driver: bridge
+
