@@ -35,7 +35,7 @@ Navigate to the `/misc` directory, where you'll find a `docker-compose.yml` file
 
 `docker-compose up -d`
 
-API Documentation
+#### Accessing the API Documentation
 Both services come with SpringDoc OpenAPI and Swagger UI enabled by default.
 
 After a successful startup, you can access the Swagger UI for each service from your preferred browser:
@@ -44,15 +44,15 @@ After a successful startup, you can access the Swagger UI for each service from 
 - For the syscode-address-service: [http://localhost:8444/swagger-ui/index.html#](http://localhost:8444/swagger-ui/index.html#)
 
 
-## Build and Run from IntelliJ
+### Build and Run from IntelliJ
 
 The project is fully compatible with IntelliJ IDEA and includes pre-configured run configurations for both the Address and Profile services. These configurations are stored in the `.run` directory at the root of the project and should be automatically recognized by IntelliJ, allowing you to run each service without additional setup.
 
-### Running the Services
+#### Running the Services
 
 To run a service, simply find the corresponding configuration in the IntelliJ IDEA run configurations dropdown and click the run button. This will start the selected service on your local machine.
 
-### Accessing the API Documentation
+#### Accessing the API Documentation
 
 Both the Address and Profile services are configured with Swagger UI, which provides a web-based UI for interacting with the service's API. Once a service is running, you can access its Swagger UI at the following URLs:
 
